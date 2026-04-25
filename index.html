@@ -1,157 +1,213 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    body {background-color: #0c0f17}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #3874c0; -webkit-text-stroke: #3874c0; background-color: #121313}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #3874c0; -webkit-text-stroke: #3874c0; background-color: #121313; min-height: 16.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="zh-TW"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;證道系統 - 雙風格界面&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://upload-widget.cloudinary.com/global/all.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>:root { --modern-bg: #f4f7f6; --modern-primary: #4a90e2; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body { margin: 0; display: flex; flex-direction: column; height: 100vh; font-family: sans-serif; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- 風格 A: PTT 經典黑底 (頂部/聖經區) --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ptt-section {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #bbbbbb;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex: 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow-y: auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 3px solid #555;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: "Fixedsys", "MingLiU", monospace;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ptt-header { color: #fff; border-bottom: 1px solid #555; margin-bottom: 10px; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ptt-tag { color: #ffffff; background: #0000aa; padding: 2px 5px; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ptt-verse { color: #00ff00; line-height: 1.8; white-space: pre-wrap; margin-top: 15px; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ptt-ref { color: #ffff00; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ptt-input-group { margin-bottom: 10px; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ptt-select { background: #000; color: #fff; border: 1px solid #fff; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- 風格 B: 現代簡約雲端 (底部/上傳區) --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modern-section {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: var(--modern-bg);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex: 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 30px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 -5px 15px rgba(0,0,0,0.1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.upload-card {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 25px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 15px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px rgba(0,0,0,0.05);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 500px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modern-btn {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--modern-primary);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 12px 25px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 25px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 16px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: 0.3s;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modern-btn:hover { background: #357abd; transform: translateY(-2px); }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>#preview-grid {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: grid;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.thumb { width: 100%; height: 100px; object-fit: cover; border-radius: 8px; border: 2px solid #fff; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="ptt-section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="ptt-header"&gt;作者: Preacher (證道者) 看板: Bible_Study&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="ptt-header"&gt;標題: &lt;span class="ptt-tag"&gt;今日經文&lt;/span&gt; 點選章節自動顯示&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="ptt-input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;select id="bookSelect" class="ptt-select"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;option value="john"&gt;約翰福音&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;option value="psalms"&gt;詩篇&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;option value="genesis"&gt;創世記&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button onclick="fetchBible()" style="background:#555; color:#fff; cursor:pointer;"&gt;[ 查詢 ]&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="bible-display" class="ptt-verse"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>請在上方選擇書卷並點擊查詢...</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="modern-section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="upload-card"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 style="color: #333; margin-top: 0;"&gt;雲端多媒體中心&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="color: #666; font-size: 14px;"&gt;上傳本次證道的影像或照片至雲端存儲&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button id="upload_widget" class="modern-btn"&gt;選擇檔案並上傳&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="preview-grid"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// 1. 聖經查詢邏輯 (PTT 風格)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>async function fetchBible() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const book = document.getElementById('bookSelect').value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const display = document.getElementById('bible-display');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>display.innerHTML = "系統載入中...";</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>try {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const res = await fetch(`https://bible-api.com/${book}+1`);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const data = await res.json();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display.innerHTML = `&lt;span class="ptt-ref"&gt;查詢結果：${data.reference}&lt;/span&gt;\n\n${data.text}`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>} catch (e) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display.innerText = "連線失敗，請檢查網路。";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// 2. 雲端上傳邏輯 (現代風格)</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const myWidget = cloudinary.createUploadWidget({</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>cloudName: 'YOUR_CLOUD_NAME', // 填入你的 Cloudinary 名稱</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>uploadPreset: 'YOUR_PRESET', <span class="Apple-converted-space">  </span>// 填入你的 Unsigned Preset</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>sources: ['local', 'camera'],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>multiple: true</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}, (error, result) =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (!error &amp;&amp; result &amp;&amp; result.event === "success") {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const grid = document.getElementById('preview-grid');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const url = result.info.secure_url;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 根據類型顯示</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (result.info.resource_type === 'image') {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>grid.innerHTML += `&lt;img src="${url}" class="thumb"&gt;`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>grid.innerHTML += `&lt;div style="font-size:10px; background:#ddd; padding:5px;"&gt;影片已存&lt;/div&gt;`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById("upload_widget").addEventListener("click", () =&gt; myWidget.open());</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
-</html>
+import React, { useState } from 'react';
+import { 
+  Calendar, 
+  Clock, 
+  MapPin, 
+  Heart, 
+  Camera, 
+  Music, 
+  ChevronRight, 
+  ChevronLeft, 
+  Info,
+  Users,
+  CheckCircle2,
+  Sparkles
+} from 'lucide-react';
+
+const App = () => {
+  const [activeDay, setActiveDay] = useState(0);
+
+  const scheduleData = [
+    {
+      date: '4/23',
+      weekday: '星期四',
+      title: '第一天：開端與佈道',
+      events: [
+        { time: '06:40', text: '早禱 (配合團契)', type: 'prayer' },
+        { time: '09:00', text: '訪問', type: 'activity' },
+        { time: '17:00', text: '全體禱告會', type: 'prayer' },
+        { time: '17:30', text: '晚餐時間', type: 'meal' },
+        { time: '19:00', text: '會前禱告 / 詩頌', type: 'worship' },
+        { time: '19:30', text: '第一天佈道會 (含禱告)', type: 'main', highlight: true },
+      ]
+    },
+    {
+      date: '4/24',
+      weekday: '星期五',
+      title: '第二天：進深與佈道',
+      events: [
+        { time: '06:40', text: '早禱 (配合團契)', type: 'prayer' },
+        { time: '09:00', text: '訪問', type: 'activity' },
+        { time: '17:00', text: '全體禱告會', type: 'prayer' },
+        { time: '17:30', text: '晚餐時間', type: 'meal' },
+        { time: '19:00', text: '會前禱告 / 詩頌', type: 'worship' },
+        { time: '19:30', text: '第二天佈道會 (含禱告)', type: 'main', highlight: true },
+      ]
+    },
+    {
+      date: '4/25',
+      weekday: '星期六',
+      title: '第三天：安息日與洗禮',
+      events: [
+        { time: '07:30', text: '早禱 (鍾霖恩執事)', type: 'prayer' },
+        { time: '09:50', text: '詩頌與禱告', type: 'worship' },
+        { time: '10:00', text: '安息日暨靈恩會證道', type: 'main' },
+        { time: '11:30', text: '午餐與休息', type: 'meal' },
+        { time: '13:50', text: '會後詩頌', type: 'worship' },
+        { time: '14:00', text: '安息日暨靈恩會證道', type: 'main' },
+        { time: '16:00', text: '洗禮 (梁秀娟主領)', type: 'sacrament', highlight: true },
+        { time: '17:30', text: '晚餐時間', type: 'meal' },
+        { time: '19:30', text: '第三天佈道會 (含禱告)', type: 'main', highlight: true },
+      ]
+    },
+    {
+      date: '4/26',
+      weekday: '星期日',
+      title: '第四天：靈恩會暨聖禮(洗腳禮、聖餐禮)',
+      events: [
+        { time: '07:30', text: '早禱 (沈育丞神學生)', type: 'prayer' },
+        { time: '09:30', text: '證道：淺談靈魂 (胡明正執事)', type: 'main' },
+        { time: '10:30', text: '職務會 / 準備聖餐，獻詩：傳道、新舊任負責人', type: 'activity' },
+        { time: '10:50', text: '聖禮 (洗腳禮、聖餐)', type: 'sacrament', highlight: true },
+        { time: '13:00', text: '大合照 / 感恩奉獻', type: 'activity', highlight: true },
+        { time: '14:00', text: '午餐與大掃除', type: 'meal' },
+      ]
+    }
+  ];
+
+  const getTypeStyle = (type, highlight) => {
+    if (highlight) return 'bg-amber-50 border-l-4 border-amber-500 text-amber-900 font-bold';
+    switch (type) {
+      case 'prayer': return 'bg-blue-50 text-blue-700 border-l-4 border-blue-300';
+      case 'meal': return 'bg-slate-50 text-slate-400 italic';
+      case 'sacrament': return 'bg-red-50 text-red-700 border-l-4 border-red-500 font-bold';
+      default: return 'bg-white text-slate-700 border border-slate-100';
+    }
+  };
+
+  const getIcon = (text, type) => {
+    if (text.includes('獻詩')) return <Music size={18} className="text-amber-600" />;
+    if (text.includes('大合照')) return <Camera size={18} className="text-slate-600" />;
+    if (type === 'prayer') return <Heart size={18} className="text-blue-500" />;
+    if (type === 'sacrament') return <CheckCircle2 size={18} className="text-red-500" />;
+    if (type === 'activity') return <Users size={18} className="text-slate-500" />;
+    return <Clock size={18} className="text-slate-400" />;
+  };
+
+  return (
+    <div className="flex flex-col min-h-screen bg-slate-100 items-center font-sans">
+      <div className="w-full max-w-[450px] bg-white min-h-screen shadow-2xl flex flex-col relative border-x border-slate-200">
+        
+        {/* Header Section */}
+        <header className="bg-[#1a2a3a] text-white p-8 text-center relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+          <div className="relative z-10">
+            <h4 className="text-amber-400 text-xs font-bold tracking-[0.2em] mb-2">TRUE JESUS CHURCH</h4>
+            <h1 className="text-2xl font-black mb-1">真耶穌教會 大溪教會</h1>
+            <h2 className="text-lg font-light text-slate-300">115年上半年 靈恩佈道會</h2>
+            <div className="flex items-center justify-center mt-4 text-xs text-slate-300 bg-white/10 py-2 px-3 rounded-lg backdrop-blur-sm border border-white/5">
+              <MapPin size={12} className="mr-2 text-amber-400" />
+              <span>桃園市大溪區民權東路185巷31號</span>
+            </div>
+          </div>
+        </header>
+
+        {/* Day Navigation */}
+        <nav className="flex sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+          {scheduleData.map((day, idx) => (
+            <button
+              key={idx}
+              onClick={() => setActiveDay(idx)}
+              className={`flex-1 py-4 text-center transition-all relative ${
+                activeDay === idx ? 'text-amber-600 font-bold' : 'text-slate-400'
+              }`}
+            >
+              <span className="text-[10px] block opacity-70 mb-0.5">{day.date}</span>
+              <span className="text-sm">Day {idx + 1}</span>
+              {activeDay === idx && (
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-amber-500 rounded-t-full"></div>
+              )}
+            </button>
+          ))}
+        </nav>
+
+        {/* Content Section */}
+        <main className="flex-1 p-5 pb-24 bg-white">
+          <div className="flex items-center mb-6">
+            <div className="bg-gradient-to-br from-amber-400 to-amber-600 text-white w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg shadow-amber-200">
+              {activeDay + 1}
+            </div>
+            <div className="ml-4">
+              <h3 className="text-xl font-black text-slate-800 tracking-tight leading-tight">
+                {scheduleData[activeDay].title}
+              </h3>
+              <p className="text-sm text-slate-500 font-medium">{scheduleData[activeDay].weekday}</p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            {scheduleData[activeDay].events.map((event, i) => (
+              <div 
+                key={i} 
+                className={`flex items-center p-4 rounded-2xl transition-all shadow-sm active:scale-[0.98] ${getTypeStyle(event.type, event.highlight)}`}
+              >
+                <div className="w-16 font-mono text-sm opacity-60 font-bold border-r border-black/5 mr-4 shrink-0">
+                  {event.time}
+                </div>
+                <div className="flex-1 flex items-center gap-3">
+                  {getIcon(event.text, event.type)}
+                  <span className={`leading-snug ${event.highlight ? 'text-lg font-bold tracking-tight' : 'text-[15px]'}`}>
+                    {event.text}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Reminder Box */}
+          <div className="mt-8 bg-slate-50 rounded-3xl p-6 border border-slate-100 relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-2 opacity-5">
+              <Sparkles size={48} />
+            </div>
+            <div className="flex items-center gap-2 text-slate-800 font-bold mb-3">
+              <Info size={18} className="text-amber-500" />
+              <span className="text-base tracking-tight">會務特別提醒</span>
+            </div>
+            <p className="text-[13px] text-slate-600 leading-relaxed font-medium">
+              {activeDay === 3 
+                ? "本日 10:30 有重要獻詩，13:00 進行全體大合照與感恩奉獻。請弟兄姊妹穿著正式服裝，預備聖潔、自省的心領受聖餐。"
+                : "聚會期間請將手機轉為靜音或震動。提早 10 分鐘入座，安靜心靈迎接神的恩典。"}
+            </p>
+          </div>
+        </main>
+
+        {/* Footer Section */}
+        <footer className="mt-auto p-8 bg-slate-900 text-center relative shrink-0">
+          <div className="w-12 h-1 bg-amber-500 mx-auto mb-4 rounded-full opacity-50"></div>
+          <p className="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold mb-2">115 SPRING CONVOCATION</p>
+          <p className="text-sm text-slate-300 italic font-serif">「全地都要向耶和華歌唱！」</p>
+          <p className="mt-4 text-[10px] text-slate-600 tracking-tighter">真耶穌教會 大溪教會 籌備小組 敬邀</p>
+        </footer>
+
+      </div>
+
+      <style dangerouslySetInnerHTML={{ __html: `
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+        body { 
+          font-family: 'Noto Sans TC', sans-serif; 
+          margin: 0;
+          background-color: #f1f5f9;
+        }
+        main {
+          animation: slideUp 0.4s ease-out forwards;
+        }
+        @keyframes slideUp {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}} />
+    </div>
+  );
+};
+
+export default App;
